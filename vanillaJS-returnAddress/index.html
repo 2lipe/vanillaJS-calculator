@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Busca Endereço</title>
+</head>
+<body>
+
+    <div class="container" >
+        <input data-js="status" class="status" type="text" readonly value="" >
+    
+        <div class="form-wraper">
+    
+            <h2 class="titulo">Buscar Endereço</h2>
+            <div class="form">
+    
+                <form data-js="form-search" class="search">
+                    <input data-js="getInput" type="text" placeholder="Insira o CEP">
+                    <button type="submit"><p>Buscar</p></button>
+                </form><!-- search -->
+    
+                <div data-js="form-result" class="result">
+                    <p>CEP</p><input data-js="cep" type="text" value="" readonly>
+                    <p>Logradouro</p><input data-js="logradouro" type="text" value="" readonly>
+                    <p>Bairro</p><input data-js="bairro" type="text" value="" readonly>
+                    <p>Cidade</p><input data-js="cidade" type="text" value="" readonly>
+                    <p>Estado</p><input data-js="estado" type="text" value="" readonly>
+                </div><!-- result -->
+            </div><!-- form -->
+    
+        </div><!-- form-wraper -->
+    </div><!-- container -->
+    
+<script src="./src/DOMLib.js"></script>
+<script src="./src/app.js"></script>
+</body>
+</html>
